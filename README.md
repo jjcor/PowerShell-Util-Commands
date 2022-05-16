@@ -5,11 +5,11 @@ Invoke-Command -ComputerName PC-00X -ScriptBlock {Get-Process | Sort-Object CPU 
 ```
 Add domain user, to a local admin group of AD machine.
 ```powershell
-Invoke-Command -ComputerName PC-00X -ScriptBlock {add-localgroupmember -Group 'Administradores' -Member 'south\maq'}
+Invoke-Command -ComputerName PC-00X -ScriptBlock {add-localgroupmember -Group 'Administrators' -Member 'domain\user'}
 ```
 Remove domain user, to a local admin group of AD machine.
 ```powershell
-Invoke-Command -ComputerName PC-00X -ScriptBlock {remove-localgroupmember -Group 'Administradores' -Member 'south\maq'}
+Invoke-Command -ComputerName PC-00X -ScriptBlock {remove-localgroupmember -Group 'Administrators' -Member 'domain\user'}
 ```
 Remove dameware agent of AD machine
 ```powershell
